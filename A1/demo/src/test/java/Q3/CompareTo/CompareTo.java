@@ -1,4 +1,4 @@
-package Q3;
+package Q3.CompareTo;
 import java.math.BigInteger;
 import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.*;

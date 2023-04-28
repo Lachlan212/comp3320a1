@@ -1,4 +1,4 @@
-package gcd;
+package Q3.gcd;
 
 import static org.junit.jupiter.api.Assertions.*;
 
