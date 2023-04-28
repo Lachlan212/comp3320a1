@@ -1,8 +1,9 @@
-package com.example;
+package Q1;
 import java.math.BigInteger;
 import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+//Created by Lachlan Higgins (c3374994), for SENG3320 Assignment 1
 public class SignumConstructor{
 
     //For all of these cases, a failed test will either result in a null object, rather than a BigInteger, or a NumberFormatException is thrown.

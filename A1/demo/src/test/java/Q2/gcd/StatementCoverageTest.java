@@ -1,8 +1,10 @@
-package gcd;
+package Q2.gcd;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import gcd.BigInteger;
 
 class StatementCoverageTest {
 

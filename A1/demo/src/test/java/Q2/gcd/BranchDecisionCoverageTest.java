@@ -1,10 +1,12 @@
-package gcd;
+package Q2.gcd;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class ConditionSlashDecisionCoverageTest {
+import gcd.BigInteger;
+
+class BranchDecisionCoverageTest {
 
 	@Test
 	void testCaseOne() {
@@ -17,11 +19,11 @@ class ConditionSlashDecisionCoverageTest {
 	
 	@Test
 	void testCaseTwo() {
-		BigInteger x = new BigInteger("-2147483648");
-		BigInteger y = new BigInteger("-2147483648");
+		BigInteger x = new BigInteger("-6");
+		BigInteger y = new BigInteger("-8");
 		BigInteger result;
 		result = x.gcd(y);
-		assertEquals(new BigInteger("2147483648"), result);
+		assertEquals(new BigInteger("2"), result);
 	}
 	
 	@Test
@@ -58,14 +60,5 @@ class ConditionSlashDecisionCoverageTest {
 		BigInteger result;
 		result = x.gcd(y);
 		assertEquals(new BigInteger("1"), result);
-	}
-	
-	@Test
-	void testCaseSeven() {
-		BigInteger x = new BigInteger("24");
-		BigInteger y = new BigInteger("12345678987654321");
-		BigInteger result;
-		result = x.gcd(y);
-		assertEquals(new BigInteger("3"), result);
 	}
 }

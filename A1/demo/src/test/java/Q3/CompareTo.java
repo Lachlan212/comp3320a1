@@ -3,7 +3,7 @@ import java.math.BigInteger;
 import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-
+//Created by Lachlan Higgins (c3374994), for SENG3320 Assignment 1
 public class CompareTo {
     
 
