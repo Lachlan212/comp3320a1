@@ -8,6 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.math.BigInteger;
 
+//Created by Sean Nagel, for SENG3320 Assignment 1
 public class BigIntegerTest {
 
     @Test
