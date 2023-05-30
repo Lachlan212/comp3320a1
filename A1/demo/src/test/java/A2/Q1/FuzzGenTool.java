@@ -1,8 +1,11 @@
+//Created by Lachlan Higgins, c3374994
+
 package A2.Q1;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
+//This class generates random strings of multiple words, to undergo Fuzz Testing.
 public class FuzzGenTool {
 
     
