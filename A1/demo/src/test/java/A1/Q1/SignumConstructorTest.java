@@ -1,4 +1,4 @@
-package Q1;
+package A1.Q1;
 import java.math.BigInteger;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

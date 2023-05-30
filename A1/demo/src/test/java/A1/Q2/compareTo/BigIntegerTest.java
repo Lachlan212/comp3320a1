@@ -1,4 +1,4 @@
-package Q2.compareTo;
+package A1.Q2.compareTo;
 
 import static org.junit.Assert.*;
 
