@@ -1,11 +1,11 @@
 // Completed by Matthew Clarke
-package Q3.gcd;
+package A1.Q2.gcd;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.math.BigInteger;
 
-class AllUsesCoverageTest {
+class ConditionCoverageTest {
 
 	@Test
 	void testCaseOne() {
@@ -18,24 +18,15 @@ class AllUsesCoverageTest {
 	
 	@Test
 	void testCaseTwo() {
-		BigInteger x = new BigInteger("-6");
-		BigInteger y = new BigInteger("-8");
+		BigInteger x = new BigInteger("-2147483648");
+		BigInteger y = new BigInteger("-2147483648");
 		BigInteger result;
 		result = x.gcd(y);
-		assertEquals(new BigInteger("2"), result);
+		assertEquals(new BigInteger("2147483648"), result);
 	}
 	
 	@Test
 	void testCaseThree() {
-		BigInteger x = new BigInteger("6");
-		BigInteger y = new BigInteger("8");
-		BigInteger result;
-		result = x.gcd(y);
-		assertEquals(new BigInteger("2"), result);
-	}
-	
-	@Test
-	void testCaseFour() {
 		BigInteger x = new BigInteger("-2147483648");
 		BigInteger y = new BigInteger("0");
 		BigInteger result;
@@ -44,12 +35,21 @@ class AllUsesCoverageTest {
 	}
 	
 	@Test
-	void testCaseFive() {
-		BigInteger x = new BigInteger("24");
-		BigInteger y = new BigInteger("-2147483648");
+	void testCaseFour() {
+		BigInteger x = new BigInteger("12345678987654321");
+		BigInteger y = new BigInteger("5");
 		BigInteger result;
 		result = x.gcd(y);
-		assertEquals(new BigInteger("8"), result);
+		assertEquals(new BigInteger("1"), result);
+	}
+	
+	@Test
+	void testCaseFive() {
+		BigInteger x = new BigInteger("6");
+		BigInteger y = new BigInteger("8");
+		BigInteger result;
+		result = x.gcd(y);
+		assertEquals(new BigInteger("2"), result);
 	}
 	
 	@Test
@@ -59,5 +59,14 @@ class AllUsesCoverageTest {
 		BigInteger result;
 		result = x.gcd(y);
 		assertEquals(new BigInteger("1"), result);
+	}
+	
+	@Test
+	void testCaseSeven() {
+		BigInteger x = new BigInteger("24");
+		BigInteger y = new BigInteger("12345678987654321");
+		BigInteger result;
+		result = x.gcd(y);
+		assertEquals(new BigInteger("3"), result);
 	}
 }
